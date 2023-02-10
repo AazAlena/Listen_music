@@ -1,0 +1,14 @@
+.list-group-item:hover{
+    outline: 4px solid #ffdb3d;
+    z-index: 1;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 750px) {
+    .c{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+

@@ -1,0 +1,40 @@
+/* input[type = "search"] {
+    
+} */
+
+header .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+header .nav-link {
+    color:gray;
+}
+
+header .nav-link:hover, header .nav-link:focus{
+    color:red;
+}
+
+header .nav-link:active{
+    color: #ffdbed;
+}
+
+header .nav {
+    gap:10px;
+}
+
+.plus-badge {
+    font-size: 10px;
+    padding: 5px 10px;
+    background-color: pink;
+}
+
+@media (max-width: 750px) {
+    .b{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

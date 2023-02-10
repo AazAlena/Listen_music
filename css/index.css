@@ -1,0 +1,17 @@
+.albums .card:hover{
+    outline: 2px solid #ffdb4d;
+}
+
+.albums a{
+    color:gray;
+}
+
+/* @media (max-width: 750px) {
+    .a{
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+
+
