@@ -22,7 +22,7 @@ if(!album){
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title">${album.title}</h5>
-                                    <p class="card-text">${albums[0].description}</p>
+                                    <p class="card-text">${album.description}</p>
                                     <p class="card-text"><small class="text-muted">${album.year}</small></p>
                                 </div>
                             </div>
