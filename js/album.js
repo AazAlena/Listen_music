@@ -36,16 +36,48 @@ if(!album){
     for(i = 0; i<tracks.length; i++){
         let track = tracks[i]
         playlist.innerHTML += `
-            <li class="list-group-item d-flex align-items-center">
+            <li class="track list-group-item d-flex align-items-center">
                 <img src="assets/1.png" alt="" height = "30px" class="me-3">
                 <div>
                     <div>${track.title}</div>
                     <div>${track.author}</div>
                 </div>
-                <audio src="assets/music1.1.mp3" controls> музикака </audio>
+                <audio class = "audio" src="${track.src}"> музикака </audio>
                 <div class="ms-auto">${track.time}</div>
             </li>
         `
     }
 
+    function setupAudio() {
+        // Найди коллекцию с треками
+        let trackNodes = document.querySelectorAll(`.track`); 
+        for (let i = 0; i < trackNodes.length; i++) { 
+            // Один элемент
+            let node = trackNodes[i];   
+            // Тег аудио внутри этого элемента
+            let audio = node.querySelector(`.audio`); 
+    
+            // продолжи самостоятельно
+            let isPlaying = false;
+            node.addEventListener(`click`, function () {
+                // Если трек сейчас играет...
+                if (isPlaying) {
+                    isPlaying = false;
+                    // Поставить на паузу
+                    audio.pause();
+    
+                // Если трек сейчас не играет...
+                } else {
+                    isPlaying = true;
+                    // Включить проигрывание
+                    audio.play();
+                }
+            });
+        }
+    }
+    setupAudio();
+    
 }
+
+
+

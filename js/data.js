@@ -8,17 +8,20 @@ let albums=[
             {
                 title: `treck1`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck2`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck3`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
         ]
     },
@@ -31,17 +34,20 @@ let albums=[
             {
                 title: `treck1`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck2`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck3`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
         ]
     },
@@ -54,17 +60,20 @@ let albums=[
             {
                 title: `treck1`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck2`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck3`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
         ]
     },
@@ -77,17 +86,20 @@ let albums=[
             {
                 title: `treck1`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck2`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
             {
                 title: `treck3`,
                 author: `piampipipiam`,
-                time: `3:50`
+                time: `3:50`,
+                src: `assets/music1.1.mp3`
             },
         ]
     }
