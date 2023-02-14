@@ -39,14 +39,19 @@ if(!album){
             <li class="track list-group-item d-flex align-items-center">
                 <img src="assets/1.png" alt="" height = "30px" class="img-pause me-3">
                 <img src="assets/2.jpg" alt="" height = "30px" class="img-play me-3 d-none">
-                // <div class="progress">
-                //     <div class="progress-bar" role="progressbar" aria-valuenow="25%" aria-valuemin="0" aria-valuemax="100"></div>
-                // </div>
+                
                 <div>
                     <div>${track.title}</div>
                     <div>${track.author}</div>
                 </div>
+                
+                
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                    
                 <audio class = "audio" src="${track.src}"> музикака </audio>
+                
                 <div class="ms-auto time">${track.time}</div>
             </li>
         `
@@ -92,7 +97,7 @@ if(!album){
                 }
                 // Нужно ли вызвать её ещё раз?
                 if (track.isPlaying) {
-                      requestAnimationFrame(updateProgress);
+                    requestAnimationFrame(updateProgress);
                 }
                 
               }
@@ -113,6 +118,8 @@ if(!album){
 
         return `${minutes}:${seconds}`
     }
+
+    
 }
 
 

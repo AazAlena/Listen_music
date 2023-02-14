@@ -12,3 +12,9 @@
     }
 }
 
+.progress{
+    display: flex;
+    width: 80%;
+}
+
+
