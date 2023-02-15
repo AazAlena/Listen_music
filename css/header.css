@@ -1,10 +1,6 @@
 /* input[type = "search"] {
     
 } */
-/* *{
-    background-color: black;
-} */
-
 header .logo-text {
     font-size: 24px;
     font-weight: bold;
@@ -12,7 +8,7 @@ header .logo-text {
 }
 
 header .nav-link {
-    color:gray;
+    color:white;
 }
 
 header .nav-link:hover, header .nav-link:focus{
