@@ -47,7 +47,7 @@ if(!album){
                 
                 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: "></div>
                 </div>
                     
                 <audio class = "audio" src="${track.src}"> музикака </audio>
@@ -86,14 +86,28 @@ if(!album){
                     audio.play();
                     imgPause.classList.add(`d-none`);
                     imgPlay.classList.remove(`d-none`);
+
+                    // progressBar = node.querySelector(`.progress-bar`);
+                    // progressBar.style.width = Math.trunc(audio.currentTime)/Math.trunc(audio.duration)*100 + `%`;
+
                     updateProgress()
                 }
             });
             function updateProgress() {
                 // Нарисовать актуальное время
                 let time = getTime(audio.currentTime);
-                if (time != timeNode.innerHtml){
-                    timeNode.innerHTML =time;
+                if (time != timeNode.innerHTML){
+                    timeNode.innerHTML = time;
+
+                    // asd = (node.querySelector(`.audio`).currentTime*100/node.querySelector(`.audio`).duration) /100
+                    // console.log(asd);
+                    // asd1 =asd.toFixed(2);
+                    // console.log(asd1);
+                    // asd2 = asd1*100;
+                    // console.log(asd2);
+                    progressBar = node.querySelector(`.progress-bar`)
+                    progressBar.style.width = Math.trunc(audio.currentTime)/Math.trunc(audio.duration)*100 + `%`;
+
                 }
                 // Нужно ли вызвать её ещё раз?
                 if (track.isPlaying) {
@@ -118,8 +132,6 @@ if(!album){
 
         return `${minutes}:${seconds}`
     }
-
-    
 }
 
 
