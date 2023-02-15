@@ -37,7 +37,7 @@ if(!album){
         let track = tracks[i]
         playlist.innerHTML += `
             <li class="track list-group-item d-flex align-items-center">
-                <img src="assets/1.png" alt="" height = "30px" class="img-pause me-3">
+                <img src="${album.img}" alt="" height = "30px" class="img-pause me-3">
                 <img src="assets/2.jpg" alt="" height = "30px" class="img-play me-3 d-none">
                 
                 <div>
@@ -47,7 +47,7 @@ if(!album){
                 
                 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: "></div>
+                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: "></div>
                 </div>
                     
                 <audio class = "audio" src="${track.src}"> музикака </audio>

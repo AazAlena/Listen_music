@@ -1,7 +1,7 @@
 let albums=[
     {
         title: ` Собраться с мыслями1 `,
-        img: `assets/1.png`,
+        img: `assets/second.jpg`,
         year:2023,
         description: `Супер классное описание альбома`,
         tracks: [
@@ -30,7 +30,7 @@ let albums=[
     },
     {
         title: ` Собраться с мыслями2 `,
-        img: `assets/1.png`,
+        img: `assets/first.jpg`,
         year:2022,
         description: `Супер классное описание альбома`,
         tracks: [
@@ -59,7 +59,7 @@ let albums=[
     },
     {
         title: ` Собраться с мыслями3 `,
-        img: `assets/1.png`,
+        img: `assets/third.jpg`,
         year:2021,
         description: `Супер классное описание альбома`,
         tracks: [
@@ -88,7 +88,7 @@ let albums=[
     },
     {
         title: ` Собраться с мыслями4 `,
-        img: `assets/1.png`,
+        img: `assets/2.jpg`,
         year:2020,
         description: `Супер классное описание альбома`,
         tracks: [
